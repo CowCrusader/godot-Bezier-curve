@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://bs883px7eraie"]
+
+[ext_resource type="Texture2D" uid="uid://4s70ouy2dbjs" path="res://Black.png" id="1_k8y3q"]
+[ext_resource type="Script" path="res://curve.gd" id="1_nflye"]
+
+[node name="main" type="Node2D"]
+script = ExtResource("1_nflye")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(567, 349)
+scale = Vector2(3.21484, 2.35938)
+texture = ExtResource("1_k8y3q")
+
+[node name="TextEdit" type="TextEdit" parent="."]
+offset_right = 212.0
+offset_bottom = 180.0
+mouse_filter = 2
+text = "LMB - move nodes
+RMB- create  new nodes
+F - Hide additional lines
+G - Hide nodes
+R - reset
+ESC - quit"
